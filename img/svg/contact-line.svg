@@ -1,5 +1,19 @@
 <svg width="238" height="227" viewBox="0 0 238 227" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="227.5" cy="205.5" r="9.5" fill="#F8A441"/>
 <circle cx="61.5" cy="9.5" r="9.5" fill="#F8A441"/>
-<path d="M6.49994 92.0001C-2.66673 70.1668 -4.40006 23.2001 61.9999 10.0001C145 -6.4999 195.5 9.5001 200.5 67.5001C205.5 125.5 299.5 225.5 159.5 225.5" stroke="#F8A441" stroke-width="3" stroke-dasharray="17 17"/>
+<path class="path" d="M6.49994 92.0001C-2.66673 70.1668 -4.40006 23.2001 61.9999 10.0001C145 -6.4999 195.5 9.5001 200.5 67.5001C205.5 125.5 299.5 225.5 159.5 225.5" stroke="#F8A441" stroke-width="3" stroke-dasharray="17 17"/>
+
+
+ <style>
+    .path {
+        animation: dash 20s linear infinite;
+    }
+
+    @keyframes dash {
+        to {
+            stroke-dashoffset: -500;
+        }
+    }                                
+</style>
+
 </svg>

@@ -416,6 +416,10 @@
     outline: none !important;
 }
 
+#tentips.tentipsmodal .modal-content {
+    overflow: initial;
+}
+
 
 @media(max-width:1700.8px) {
     .tentipsmodal .modal-dialog {
@@ -763,7 +767,7 @@
     }
 
     .tentipsmodal .modal-content {
-        padding: 45px 30px 30px 30px;
+        padding: 35px 30px 30px 30px;
     }
 
     .tentipsmodal .tentipsmodal__content form button {
@@ -777,15 +781,19 @@
 
     .tentipsmodal-bgpic2 {
         display: block;
-        width: 100px;
+        width: 120px;
         height: auto;
         right: -20px;
         transform: rotate(180deg);
     }
 
+    #tentips.tentipsmodal .modal-content {
+        overflow: hidden;
+    }
 
-
-
+    .tentipsmodal .tentipsmodal__content .title {
+        font-size: 24px;
+    }
 
 
 
@@ -806,5 +814,9 @@
         font-size: 14px;
         padding-left: 30px;
         padding-right: 30px;
+    }
+
+    .tentipsmodal .tentipsmodal__content .title {
+        font-size: 21px;
     }
 }
