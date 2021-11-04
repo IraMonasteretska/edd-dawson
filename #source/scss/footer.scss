@@ -1,0 +1,113 @@
+footer.footer {
+    background: #F9F9F9;
+    padding: 53px 0 40px;
+
+    .footer__topsect {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 29px;
+        border-bottom: 1px solid #E0E0E0;
+
+        .totop {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(94.36deg, #FCB766 -6.55%, #F69B31 118.85%);
+            box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.11);
+            border-radius: 16px;
+            transition: .3s;
+
+            img {
+                width: 19px;
+            }
+
+            &:hover {
+                box-shadow: 3px 10px 10px #d774015c;
+            }
+        }
+
+
+    }
+
+    .footer__bottsect {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 36px;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 72px;
+
+                a {
+                    color: #BDBDBD;
+                    font-size: 15px;
+                    text-decoration: none;
+                    transition: .3s;
+
+                    &:hover {
+                        color: #F69B31;
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        span {
+            color: #BDBDBD;
+            font-size: 15px;
+        }
+    }
+}
+
+@media(max-width: 1600.8px) {
+    footer.footer {
+        padding: 35px 0 20px;
+    }
+
+    .footer__logo {
+        img {
+            max-width: 70px;
+        }
+    }
+
+    footer.footer .footer__topsect .totop {
+        width: 50px;
+        height: 50px;
+
+        img {
+            width: 15px;
+        }
+    }
+
+    footer.footer .footer__bottsect {
+        padding-top: 20px;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+@media(max-width:991.8px) {
+    footer.footer {
+        padding: 20px 0 20px;
+    }
+}

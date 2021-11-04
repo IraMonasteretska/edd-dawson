@@ -1,0 +1,444 @@
+.service-titlesect.cont {
+    h1 {
+        text-align: left;
+        width: 100%;
+    }
+}
+
+.contsection {
+    padding-bottom: 65px;
+    position: relative;
+
+    .contsection__formsect {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .contform {
+        margin-bottom: 0;
+        max-width: 652px;
+        padding: 78px 76px;
+        margin-top: -90px;
+
+        .title {
+            line-height: 130%;
+            margin-bottom: 14px;
+        }
+
+        .descr {
+            max-width: 100%;
+            margin-bottom: 48px;
+        }
+
+        textarea.form-control {
+            height: 200px;
+            box-shadow: none !important;
+            border: 1px solid rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            margin-bottom: 19px;
+            color: #000;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            padding: 20px;
+            resize: none;
+            transition: 0.5s;
+
+            &:focus {
+                border-color: #F69B31;
+                box-shadow: 0 0px 5px #f8a23e !important;
+            }
+
+            &::placeholder {
+                color: rgba(0, 0, 0, 0.25);
+            }
+        }
+
+        &:after {
+            display: none;
+        }
+
+        .yellow-btn {
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+
+    .contbgcirc {
+        position: absolute;
+        bottom: 0;
+        left: 127px;
+        z-index: -1;
+    }
+
+    .contbgman {
+        position: absolute;
+        right: calc(50% + 100px);
+        bottom: 0;
+    }
+
+
+
+
+}
+
+.thankmodal {
+    .modal-dialog {
+        max-width: 869px;
+    }
+
+    .modal-content {
+        padding: 95px 89px 96px 89px;
+        position: relative;
+    }
+
+    .thankmodalsect {
+        .title {
+            margin-bottom: 30px;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 130%;
+            max-width: 330px;
+        }
+
+        .descr {
+            opacity: 0.7;
+            font-size: 20px;
+            line-height: 150%;
+            margin-bottom: 40px;
+        }
+
+
+
+
+
+    }
+
+    .typicman {
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        right: -55px;
+    }
+
+    .typicline {
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        bottom: 0;
+        left: 50%;
+    }
+
+
+
+
+
+
+
+}
+
+.modal-backdrop {
+    background: linear-gradient(0deg, rgba(248, 161, 60, 0.75), rgba(248, 161, 60, 0.75));
+}
+
+.modal-backdrop.show {
+    opacity: 1;
+}
+
+
+
+
+@media(max-width:1600.8px) {
+
+    .header.showname .header__name {
+        font-size: 40px;
+    }
+
+    .service-titlesect {
+        height: 300px;
+    }
+
+    .service-titlesect h1 {
+        font-size: 58px;
+    }
+
+    .contsection .contform {
+        max-width: 500px;
+        padding: 50px;
+    }
+
+    .contform .title {
+        font-size: 28px;
+    }
+
+    .contsection .contform .title {
+        margin-bottom: 10px;
+    }
+
+    .contsection .contform .descr {
+        margin-bottom: 30px;
+    }
+
+    .contsection .contform textarea.form-control {
+        height: 100px;
+        padding: 10px 20px;
+    }
+
+    .contform input.form-control {
+        height: 54px;
+    }
+
+    .contsection .contform .yellow-btn,
+    .contform button {
+        min-height: 58px;
+    }
+
+    .contsection .contform {
+        margin-top: -50px;
+    }
+
+    .contsection .contbgman {
+        right: calc(50% + 50px);
+        width: 450px;
+    }
+
+    .contsection .contbgcirc {
+        width: 70%;
+    }
+
+    .thankmodal .thankmodalsect .title {
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+
+    .thankmodal .thankmodalsect .descr {
+        font-size: 16px;
+    }
+
+    .thankmodalsect .yellow-btn {
+        min-height: 58px;
+    }
+
+    .thankmodal .modal-content {
+        padding: 50px 60px 50px 60px;
+    }
+
+    .thankmodal .modal-dialog {
+        max-width: 600px;
+    }
+
+    .thankmodal .typicman {
+        width: 300px;
+    }
+
+    .thankmodal .typicline {
+        left: initial;
+        right: 20px;
+    }
+
+    .thankmodalsect {
+        position: relative;
+        z-index: 2;
+    }
+
+
+}
+
+@media(max-width:1399.8px) {}
+
+@media(max-width:1199.8px) {
+    .header.showname .header__name {
+        font-size: 32px;
+    }
+
+    .service-titlesect.cont h1 {
+        margin: 0;
+    }
+
+    .service-titlesect h1 {
+        font-size: 46px;
+    }
+
+    .service-titlesect {
+        height: 240px;
+    }
+
+    .contsection {
+        padding-bottom: 35px;
+    }
+
+    .contsection .contbgman {
+        right: calc(50% + 80px);
+        width: 400px;
+    }
+
+    .thankmodal .thankmodalsect .title {
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+    .thankmodal .thankmodalsect .title {
+        max-width: 250px;
+    }
+
+
+
+}
+
+@media(max-width:991.8px) {
+    .service-titlesect {
+        height: 280px;
+    }
+
+    .contsection .contform {
+        max-width: 440px;
+        padding: 45px 50px 45px;
+    }
+
+    .contsection {
+        padding-bottom: 30px;
+    }
+
+    .contsection .contbgman {
+        right: initial;
+        width: 400px;
+        left: 55%;
+        transform: translateX(-120%);
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .contsection .contbgman {
+        display: none;
+    }
+
+    .contsection .contform {
+        max-width: 100%;
+        padding: 45px 50px 45px;
+    }
+
+    .contsection .contbgcirc {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .thankmodal .modal-dialog {
+        max-width: 440px;
+    }
+
+    .thankmodal .modal-content {
+        padding: 30px 30px 30px 30px;
+    }
+
+    .thankmodal .thankmodalsect .title {
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+
+    .thankmodal .thankmodalsect .descr {
+        font-size: 14px;
+    }
+
+    .thankmodal .thankmodalsect .descr {
+        margin-bottom: 30px;
+    }
+
+    .thankmodalsect .yellow-btn {
+        font-size: 14px;
+        padding-left: 30px;
+        padding-right: 30px;
+        min-height: 52px;
+    }
+
+    .thankmodal .typicman {
+        width: 200px;
+        right: -30px;
+    }
+
+
+
+
+
+}
+
+@media(max-width:575.8px) {
+    .contsection .contform {
+        padding: 30px;
+    }
+
+    .service-titlesect.cont h1 {
+        text-align: center;
+        font-size: 32px;
+        margin-top: -20px;
+    }
+
+    .header.showname .header__name {
+        font-size: 22px;
+    }
+
+    .contform .title {
+        font-size: 24px;
+    }
+
+    .contsection .contform .descr {
+        font-size: 14px;
+    }
+
+    .service-titlesect {
+        height: 220px;
+    }
+
+    .contform input.form-control {
+        height: 44px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 14px;
+    }
+
+    .contform button,
+    .contsection .contform .yellow-btn,
+    .dealbox .yellow-btn {
+        font-size: 14px;
+        min-height: 48px;
+    }
+
+    .dealbox {
+        padding-bottom: 25px;
+    }
+
+    .thankmodal .modal-dialog {
+        max-width: 90%;
+    }
+
+    .thankmodal .typicman {
+        width: 170px;
+        right: -30px;
+    }
+
+    .thankmodal .thankmodalsect .title {
+        font-size: 20px;
+    }
+
+    .thankmodal .typicman {
+        display: none;
+    }
+
+    .thankmodalsect {
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
