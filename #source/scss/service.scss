@@ -771,9 +771,17 @@
         min-width: 180px;
     }
 
+    .tentipsmodal-bgpic2 {
+        display: block;
+    }
 
-
-
+    .tentipsmodal-bgpic2 {
+        display: block;
+        width: 100px;
+        height: auto;
+        right: -20px;
+        transform: rotate(180deg);
+    }
 
 
 
