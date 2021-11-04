@@ -712,6 +712,26 @@
     }
 }
 
+.experience__step {
+    transition: .5s;
+}
+
+.experience__step.step1:hover,
+.experience__step.step3:hover,
+.experience__step.step5:hover,
+.experience__step.step7:hover {
+    transform: perspective(400px) rotateX(10deg) rotateY(-10deg);
+    text-shadow: 6px 3px rgb(132 132 132 / 30%);
+}
+
+.experience__step.step2:hover,
+.experience__step.step4:hover,
+.experience__step.step6:hover {
+    transform: perspective(400px) rotateX(10deg) rotateY(10deg);
+    text-shadow: 6px 3px rgb(132 132 132 / 30%);
+}
+
+
 
 
 
