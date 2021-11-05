@@ -681,6 +681,15 @@
     }
 }
 
+ul.soclinks li a {
+    display: inline-block;
+    border-radius: 50%;
+
+    &:hover {
+        animation: pulse1 2s infinite;
+        -webkit-animation: pulse1 2s infinite;
+    }
+}
 
 
 @-webkit-keyframes pulse1 {
@@ -743,6 +752,10 @@
     }
 
 
+}
+
+.contsection {
+    z-index: 10;
 }
 
 
