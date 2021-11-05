@@ -731,7 +731,19 @@
     text-shadow: 6px 3px rgb(132 132 132 / 30%);
 }
 
+.linkanimation {
+    span {
+        transition: .3s;
+    }
 
+    &:hover {
+        span {
+            background: rgba(132 132 132 / 70%);
+        }
+    }
+
+
+}
 
 
 

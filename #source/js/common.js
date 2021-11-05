@@ -74,59 +74,160 @@ $(document).ready(function () {
     // animation
 
 
+    if ($('*').is('#navi-text')) {
 
+        const carouselText = [
+            { text: "compurer scientist" },
+            { text: "tech entrepreneur" },
+            { text: "marketing specialist" }
+        ]
 
-    const carouselText = [
-        { text: "compurer scientist" },
-        { text: "tech entrepreneur" },
-        { text: "marketing specialist" }
-    ]
+        $(document).ready(async function () {
+            carousel(carouselText, "#feature-text")
+        });
 
-    $(document).ready(async function () {
-        carousel(carouselText, "#feature-text")
-    });
-
-    async function typeSentence(sentence, eleRef, delay = 100) {
-        const letters = sentence.split("");
-        let i = 0;
-        while (i < letters.length) {
-            await waitForMs(delay);
-            $(eleRef).append(letters[i]);
-            i++
+        async function typeSentence(sentence, eleRef, delay = 100) {
+            const letters = sentence.split("");
+            let i = 0;
+            while (i < letters.length) {
+                await waitForMs(delay);
+                $(eleRef).append(letters[i]);
+                i++
+            }
+            return;
         }
-        return;
-    }
 
-    async function deleteSentence(eleRef) {
-        const sentence = $(eleRef).html();
-        const letters = sentence.split("");
-        let i = 0;
-        while (letters.length > 0) {
-            await waitForMs(100);
-            letters.pop();
-            $(eleRef).html(letters.join(""));
+        async function deleteSentence(eleRef) {
+            const sentence = $(eleRef).html();
+            const letters = sentence.split("");
+            let i = 0;
+            while (letters.length > 0) {
+                await waitForMs(100);
+                letters.pop();
+                $(eleRef).html(letters.join(""));
+            }
         }
-    }
 
-    async function carousel(carouselList, eleRef) {
-        var i = 0;
-        while (true) {
-            updateFontColor(eleRef, carouselList[i].color)
-            await typeSentence(carouselList[i].text, eleRef);
-            await waitForMs(1500);
-            await deleteSentence(eleRef);
-            await waitForMs(500);
-            i++
-            if (i >= carouselList.length) { i = 0; }
+        async function carousel(carouselList, eleRef) {
+            var i = 0;
+            while (true) {
+                updateFontColor(eleRef, carouselList[i].color)
+                await typeSentence(carouselList[i].text, eleRef);
+                await waitForMs(1500);
+                await deleteSentence(eleRef);
+                await waitForMs(500);
+                i++
+                if (i >= carouselList.length) { i = 0; }
+            }
         }
+
+        function updateFontColor(eleRef, color) {
+            $(eleRef).css('color', color);
+        }
+
+        function waitForMs(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms))
+        }
+
     }
 
-    function updateFontColor(eleRef, color) {
-        $(eleRef).css('color', color);
+    // SErvice page animation
+
+    if ($('*').is('.servanimtext')) {
+        // split text
+        const text = document.querySelector('.servanimtext');
+        text.innerHTML = text.textContent.replace(/\S/g, '<span>$&</span>');
+
+        //AnimeJS
+        anime.timeline({
+            loop: true
+        })
+            .add({
+                targets: '.servanimtext span',
+                translateY: [-600, 0], //[start value, end value]
+                scale: [10, 1],
+                opacity: [0, 1],
+                easing: 'easeOutExpo',
+                duration: 1000,
+                delay: anime.stagger(100),
+            })
+            .add({
+                targets: '.servanimtext span',
+                translateX: [0, -1000], //[start value, end value]
+                scale: [1, 1],
+                opacity: [1, 0],
+                easing: 'easeOutExpo',
+                duration: 1500,
+                delay: anime.stagger(100)
+            })
+            .add({
+                targets: '.servanimtext span',
+                translateX: [1000, 0],  //[start value, end value]
+                scale: [1, 1],
+                opacity: [0, 1],
+                easing: 'easeOutExpo',
+                duration: 1500,
+                delay: anime.stagger(100),
+            })
+            .add({
+                targets: '.servanimtext span',
+                translateX: [0, 0],  //[start value, end value]
+                scale: [1, 10],
+                opacity: [1, 0],
+                easing: 'easeOutExpo',
+                duration: 1500,
+                delay: anime.stagger(100),
+            })
+
     }
 
-    function waitForMs(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms))
+
+    if ($('*').is('.flyingtext')) {
+        // split text
+        const text = document.querySelector('.flyingtext');
+        text.innerHTML = text.textContent.replace(/\S/g, '<span>$&</span>');
+
+        //AnimeJS
+        anime.timeline({
+            loop: true
+        })
+            .add({
+                targets: '.flyingtext span',
+                translateY: [-600, 0], //[start value, end value]
+                scale: [10, 1],
+                opacity: [0, 1],
+                easing: 'easeOutExpo',
+                duration: 1000,
+                delay: anime.stagger(100),
+            })
+            .add({
+                targets: '.flyingtext span',
+                translateX: [0, -1000], //[start value, end value]
+                scale: [1, 1],
+                opacity: [1, 0],
+                easing: 'easeOutExpo',
+                duration: 1500,
+                delay: anime.stagger(100)
+            })
+            .add({
+                targets: '.flyingtext span',
+                translateX: [1000, 0],  //[start value, end value]
+                scale: [1, 1],
+                opacity: [0, 1],
+                easing: 'easeOutExpo',
+                duration: 1500,
+                delay: anime.stagger(100),
+            })
+            .add({
+                targets: '.flyingtext span',
+                translateX: [0, 0],  //[start value, end value]
+                scale: [1, 10],
+                opacity: [1, 0],
+                easing: 'easeOutExpo',
+                duration: 1500,
+                delay: anime.stagger(100),
+            })
+
     }
 
 

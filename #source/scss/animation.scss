@@ -1,150 +1,186 @@
 @keyframes attenuation1 {
     0% {
         opacity: 0;
+        z-index: -1;
     }
 
     9% {
         opacity: 1;
+        z-index: 1;
     }
 
     18% {
         opacity: 1;
+        z-index: 1;
     }
 
     27% {
         opacity: 1;
+        z-index: 1;
     }
 
     36% {
         opacity: 0;
+        z-index: -1;
     }
 
     45% {
         opacity: 0;
+        z-index: -1;
     }
 
     54% {
         opacity: 0;
+        z-index: -1;
     }
 
     63% {
         opacity: 0;
+        z-index: -1;
     }
 
     72% {
         opacity: 0;
+        z-index: -1;
     }
 
     81% {
         opacity: 0;
+        z-index: -1;
     }
 
     90% {
         opacity: 0;
+        z-index: -1;
     }
 
     100% {
         opacity: 0;
+        z-index: -1;
     }
 }
 
 @keyframes attenuation2 {
     0% {
         opacity: 0;
+        z-index: -1;
     }
 
     9% {
         opacity: 0;
+        z-index: -1;
     }
 
     18% {
         opacity: 0;
+        z-index: -1;
     }
 
     27% {
         opacity: 0;
+        z-index: -1;
     }
 
     36% {
         opacity: 1;
+        z-index: 1;
     }
 
     45% {
         opacity: 1;
+        z-index: 1;
     }
 
     54% {
         opacity: 1;
+        z-index: 1;
     }
 
     63% {
         opacity: 0;
+        z-index: -1;
     }
 
     72% {
         opacity: 0;
+        z-index: -1;
     }
 
     81% {
         opacity: 0;
+        z-index: -1;
     }
 
     90% {
         opacity: 0;
+        z-index: -1;
     }
 
     100% {
         opacity: 0;
+        z-index: -1;
     }
 }
 
 @keyframes attenuation3 {
     0% {
         opacity: 0;
+        z-index: -1;
     }
 
     9% {
         opacity: 0;
+        z-index: -1;
     }
 
     18% {
         opacity: 0;
+        z-index: -1;
     }
 
     27% {
         opacity: 0;
+        z-index: -1;
     }
 
     36% {
         opacity: 0;
+        z-index: -1;
     }
 
     45% {
         opacity: 0;
+        z-index: -1;
     }
 
     54% {
         opacity: 0;
+        z-index: -1;
     }
 
     63% {
         opacity: 1;
+        z-index: 1;
     }
 
     72% {
         opacity: 1;
+        z-index: 1;
     }
 
     81% {
         opacity: 1;
+        z-index: 1;
     }
 
     90% {
         opacity: 1;
+        z-index: 1;
     }
 
     100% {
         opacity: 0;
+        z-index: -1;
     }
 }
 
@@ -153,7 +189,6 @@
     position: absolute;
     text-decoration: none;
     opacity: 0;
-
     animation-name: attenuation;
     animation-duration: 12s;
     // animation-delay: 0s;
@@ -316,7 +351,52 @@
     -webkit-animation: move 10s infinite;
 }
 
+.service-titlesect.serv {
+    position: relative;
+    overflow: hidden;
 
+    span {
+        position: relative;
+        display: inline-block;
+    }
+}
+
+.flyingtext {
+    position: relative;
+
+    span {
+        position: relative;
+        display: inline-block;
+    }
+}
+
+
+@keyframes moveservpic {
+    0% {
+        transform: scale(1);
+        filter: drop-shadow(0px 0px 0px #fff);
+    }
+
+    50% {
+        transform: scale(1.1);
+        filter: drop-shadow(3px 3px 4px #777);
+    }
+
+    100% {
+        transform: scale(1);
+        filter: drop-shadow(0px 0px 0px #fff);
+    }
+
+}
+
+.servpicwrap {
+    img {
+        animation: moveservpic 4s infinite;
+        -webkit-animation: moveservpic 4s infinite;
+        animation-timing-function: ease-in-out;
+        transform-origin: top right;
+    }
+}
 
 
 
@@ -386,6 +466,23 @@
         left: 0;
     }
 
+    @keyframes moveservpic {
+        0% {
+            transform: scale(1);
+            filter: drop-shadow(0px 0px 0px #fff);
+        }
+
+        50% {
+            transform: scale(1.05);
+            filter: drop-shadow(3px 3px 4px #777);
+        }
+
+        100% {
+            transform: scale(1);
+            filter: drop-shadow(0px 0px 0px #fff);
+        }
+
+    }
 
 
 
