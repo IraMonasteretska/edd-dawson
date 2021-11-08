@@ -77,7 +77,7 @@ $(document).ready(function () {
     if ($('*').is('#navi-text')) {
 
         const carouselText = [
-            { text: "compurer scientist" },
+            { text: "computer scientist" },
             { text: "tech entrepreneur" },
             { text: "marketing specialist" }
         ]
