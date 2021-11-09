@@ -758,13 +758,41 @@ ul.soclinks li a {
     z-index: 10;
 }
 
+.testimonials .swiper-button-next:after,
+.testimonials .swiper-button-prev:after {
+    color: #f69b31;
+}
 
+.testimonials .swiper-button-next {
+    bottom: 0;
+    top: initial;
+    right: 20%;
+}
 
+.testimonials .swiper-button-prev {
+    bottom: 0;
+    top: initial;
+    left: 20%;
+}
 
+.testimonials .swiper-wrapper {
+    padding-bottom: 70px;
+}
 
+.testimonials .swiper-pagination {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+}
 
+.testimonials .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
 
-
+    &.swiper-pagination-bullet-active {
+        background: #f69b31;
+    }
+}
 
 @media(max-width:1600.8px) {
     main.main {
